@@ -59,7 +59,7 @@ func Error500(w http.ResponseWriter) {
 	w.WriteHeader(http.StatusInternalServerError)
 	t, err := template.ParseFiles("templates/500-error.html")
 	if err != nil {
-		log.Fatalf("Error happened in parsing file. Err: %s", err)
+		log.Fatalf("Error happened in parsing file. Error: %s", err)
 		return
 	}
 	t.Execute(w, nil)
@@ -69,7 +69,7 @@ func Error404(w http.ResponseWriter) {
 	w.WriteHeader(http.StatusNotFound)
 	t, err := template.ParseFiles("templates/404-error.html")
 	if err != nil {
-		log.Fatalf("Error happened in parsing file. Err: %s", err)
+		log.Fatalf("Error happened in parsing file. Error: %s", err)
 		return
 	}
 	t.Execute(w, nil)
@@ -79,7 +79,7 @@ func Error400(w http.ResponseWriter) {
 	w.WriteHeader(http.StatusBadRequest)
 	t, err := template.ParseFiles("templates/400-error.html")
 	if err != nil {
-		log.Fatalf("Error happened in parsing file. Err: %s", err)
+		log.Fatalf("Error happened in parsing file. Error: %s", err)
 		return
 	}
 	t.Execute(w, nil)
