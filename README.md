@@ -1,7 +1,8 @@
 ### Ascii-art-web-dockerize
 
 Ascii-art-web is project similar to ascii-art, but working on your localhost.
-Running
+
+### Running:
 
 In terminal, just to start program without docker:
 
